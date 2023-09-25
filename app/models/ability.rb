@@ -6,6 +6,7 @@ class Ability
   def initialize(user)
     # Define abilities for the user here. For example:
     #
+    user ||= User.new # guest user (not logged in)
     #   return unless user.present?
     #   can :read, :all
     #   return unless user.admin?
@@ -28,5 +29,11 @@ class Ability
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/blob/develop/docs/define_check_abilities.md
+    
+    if user.present?
+      can :manage, :all
+    else
+      cannot :manage, :all
+    end
   end
 end
