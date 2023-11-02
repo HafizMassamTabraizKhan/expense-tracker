@@ -3,7 +3,7 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQotruOGm3oh1D6p0rArEcdTS5DDvsvIPeegQ&usqp=CAU" alt="logo" width="140"  height="auto" />
   <br/>
 
-  <h3><b>Blog App</b></h3>
+  <h3><b>Budget App</b></h3>
 
 </div>
 
