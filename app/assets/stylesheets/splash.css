@@ -1,0 +1,27 @@
+/* main page */
+
+#mains {
+  display: flex;
+  position: fixed;
+  bottom: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.login {
+  width: 70%;
+}
+
+.topicm {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 13rem;
+}
+
+.signup {
+  background-color: transparent !important;
+  color: var(--ash);
+}
