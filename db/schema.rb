@@ -23,18 +23,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_25_203255) do
     t.index ["user_id"], name: "index_categories_on_user_id"
   end
 
-  create_table "expense_categories", force: :cascade do |t|
+  create_table "categories_expenses", force: :cascade do |t|
     t.bigint "expense_id", null: false
     t.bigint "category_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["category_id"], name: "index_expense_categories_on_category_id"
-    t.index ["expense_id"], name: "index_expense_categories_on_expense_id"
+    t.index ["category_id"], name: "index_categories_expenses_on_category_id"
+    t.index ["expense_id"], name: "index_categories_expenses_on_expense_id"
   end
 
   create_table "expenses", force: :cascade do |t|
     t.string "name"
-    t.decimal "amount"
+    t.decimal "amount", precision: 8, scale: 2
     t.bigint "author_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -50,12 +48,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_25_203255) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string "unconfirmed_email"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "categories", "users"
-  add_foreign_key "expense_categories", "categories"
-  add_foreign_key "expense_categories", "expenses"
+  add_foreign_key "categories_expenses", "categories"
+  add_foreign_key "categories_expenses", "expenses"
   add_foreign_key "expenses", "users", column: "author_id"
 end
