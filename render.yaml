@@ -1,0 +1,18 @@
+databases:
+  - name: ExpenseTracker
+    databaseName: ExpenseTracker
+    user: expensetracker_3suc_user
+
+services:
+  - type: web
+    name: ExpenseTracker
+    runtime: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: ExpenseTracker
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
