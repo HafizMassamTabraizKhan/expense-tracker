@@ -3,7 +3,9 @@
 
 <div id="categories">
   <% @categories.each do |category| %>
-     <%= link_to render(category), category_path(category) %>
+     <a href="<%= category_path(category) %>" class="m-1 " style="text-decoration: none;">
+            <%= render category %>
+          </a>
   <% end %>
 </div>
 
