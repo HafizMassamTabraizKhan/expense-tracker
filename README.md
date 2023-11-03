@@ -78,7 +78,7 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-[Live Demo](https://expensetracker-s4zb.onrender.com/)
+[Live Demo](https://expensetracker-ljgq.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
