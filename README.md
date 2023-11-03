@@ -15,6 +15,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+  - [👩‍💻 Presentation](#Presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -72,6 +74,16 @@
 - **[Set up the view model]**
 - **[Use preprocessed HTML file with embedded Ruby code.]**
 - **[Use layouts and templates for shared content.]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+[Live Demo](https://expense-tracker-814r.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Project Walkthrough <a name="Presentation"></a>
+[Presentation](https://drive.google.com/file/d/1D-hypWbWKVvjfpMJncQlBo5R3UhS_-nP/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -134,10 +146,6 @@ run the test with:
 ```sh
   rspec spec
 ```
-
-## 💻 Deployment <a name="getting-started"></a>
-
-- Deployment: [Deployment](https://expense-tracker-814r.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
